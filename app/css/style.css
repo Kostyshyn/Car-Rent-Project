@@ -1,0 +1,539 @@
+/*******
+*******Navbar*******
+******/
+.logo {
+	height: 80px;
+	width: 100px;
+	padding-left: 20px;
+	float: left;
+}
+.logo_header {
+	line-height: 80px;
+}
+.logo_header h1{
+	margin: 0 ;
+	color: #0099c6;
+}
+nav {
+	width: 100%;
+	z-index: 5;
+}
+.top_menu {
+	height: 80px;
+}
+.fixed_menu {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: white;
+	color: black;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	transition: all .3s ease-in-out;
+	transform: translateY(0);
+}
+.hidden_top {
+	transform: translateY(-60px);
+}
+.default_menu {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: white;
+	color: black;
+	height: 60px;
+	position: fixed;
+}
+.top_navbar {
+	padding-left: 20px;
+}
+.top_navbar ul {
+	margin: 0;
+	padding: 0;
+}
+.top_navbar ul li {
+	float: left;
+	list-style-type: none;
+	margin-right: 18px; 
+	margin-top: 30px;	
+}
+.top_navbar ul li a {
+	display: inline-block;
+	line-height: 30px;
+	text-decoration: none;	
+	color: white;
+	font-size: 18px;
+	transition: .3s;
+}
+.top_menu ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+.top_menu ul li a:hover::after {
+    width: 100%;
+}
+.top_menu ul li .active::after {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+.desktop_menu {
+	padding-left: 20px;
+}
+.desktop_menu ul {
+	margin: 0;
+	padding: 0;
+}
+.desktop_menu ul li {
+	float: left;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 18px; 
+	margin-top: 18px;	
+}
+.desktop_menu ul li a {
+	text-decoration: none;	
+	color: grey;
+	font-size: 18px;
+}
+.desktop_menu ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00aadc;
+    transition: width .3s;
+}
+.desktop_menu ul li a:hover::after {
+    width: 100%;
+}
+.desktop_menu ul li .active {
+	color: black;
+}
+.desktop_menu ul li .active::after {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #00aadc;
+} 
+.mobile_menu {
+	display: none;
+}
+.open_button {
+	width: 60px;
+	height: 80px;
+	text-align: center;
+	float: right;
+	padding-right: 10px;
+}
+.open_button img {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 15px;
+}
+.open_header {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	float: right;
+}
+.navbar {
+	width: 80%;
+	margin: 0 auto;
+}
+.navbar .navbar_buttons {
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-right: 20px;
+}
+.navbar .top_navbar_buttons {
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-right: 8px;
+}
+.navbar .navbar_buttons li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 60px;
+	margin-right: 5px; 
+}
+.navbar .menu li{
+	list-style-type: none;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	border-bottom: 1px solid #c6c6c6;
+	transition: .2s;
+}
+.navbar .menu li a {
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+}
+.navbar .menu li:hover {
+	background-color: #cac9cd;
+}
+.navbar .menu .hidden_button {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.navbar .menu .hidden_button a {
+	width: 100%;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+}
+.menu {
+	background-color: white;
+	top: 61px;
+	right: -315px;
+	height: 100vh;
+	width: 315px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	transition: all .3s ease-in-out;
+	transform: translateX(-315px);
+}
+.hidden {
+	transform: translateX(0);
+}
+/******
+*******Leadf form******
+*******/
+.lead_form {
+	padding: 10px;
+}
+.lead_form form{
+	margin-top: 30px;
+	width: 100%;
+	height: 380px;
+	background-color: white;
+	padding: 20px;
+}
+.lead_form form select {
+	width: 100%;
+	height: 35px;
+	border: 2px solid #cac9cd;
+	font-size: 16px;
+	padding: 5px;
+	outline: none;
+	margin-bottom: 17px;
+	background-color: white;
+}
+.lead_form form select:focus {
+	border: 2px solid #1ca7ea;
+}
+.lead_form form input {
+	width: 100%;
+	height: 35px;
+	border: 2px solid #cac9cd;
+	font-size: 16px;
+	padding: 5px;
+	outline: none;
+	margin-bottom: 17px;
+}
+.lead_form form input:focus {
+	border: 2px solid #1ca7ea;
+}
+.lead_form form input[type="text"] {
+	background-image: url('../img/placeholder.png');
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 5px 5px;
+	padding-left: 30px;
+}
+.lead_form h2 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.lead_form button {
+	width: 100%;
+	/*margin-top: 30px;*/
+}
+.lead_header {
+	padding: 10px;
+}
+.lead_info {
+	margin-top: 30px;
+	/*border: 1px solid white;*/
+	min-height: 380px;
+	height: auto;
+	width: 100%;
+	color: white;
+	padding: 30px 20px 30px 20px;
+}
+/******
+******Main content*******
+******/
+.container {
+	padding-top: 60px;
+}
+.page_header {
+	height: auto;
+	width: 100%;
+}
+.page_header_image {
+	background-image: url('../img/greyscale_car.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 580px;
+	height: auto;
+}
+.scale {
+	width: 100%;
+	min-height: 580px;
+	height: auto;
+	background-color: rgba(28, 167, 234, 0.7);
+}
+.deals {
+	/*background-color: #eeeeee;*/
+	height: auto;
+	width: 100%;
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
+.deals_header {	
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	height: auto;
+	width: 100%;
+	background-image: url('../img/Reef.jpg');
+	background-size: cover;
+	background-position: center;
+	/*display: none;*/
+}
+.deals_header h1{
+	margin: 0;
+}
+.deal_wrap {
+	padding: 0 10px;
+	/*background-color: white;*/
+}
+.deal {
+	height: 423px;
+	margin-bottom: 20px;
+}
+.deal .deal_image {
+	width: 100%;
+	height: 200px;
+	background-color: #dcdbde;
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+}
+.deal_info {
+	height: 150px;
+/*	border-left: 1px solid #dcdbde;
+	border-right: 1px solid #dcdbde;*/
+	padding: 10px 20px;
+}
+.deal_info h3, p {
+	margin: 5px;
+}
+.deal_info p {
+	font-size: 14px;
+}
+.deal_buttons {
+	padding: 10px;
+	height: auto;
+}
+.deal_button {
+	padding: 10px;
+}
+.deal .button {
+	width: 100%;
+	float: left;
+} 
+.deal:hover .ribbon{
+	height: 50px;
+	padding-top: 20px;
+}
+.ribbon {
+ 	box-sizing: content-box;
+  	width: 0;
+  	height: 40px;
+  	padding-top: 10px;
+  	 /*border: 30px solid #1abc9c; */
+  	/*border: 20px solid #ff6464;*/
+  	/*border: 20px solid #ffdc5a;*/
+	border: 30px solid #ffc700;
+  	border-top: 0 solid;
+  	border-bottom: 15px solid rgba(0,0,0,0);
+ 	z-index: 2;
+ 	transition: .2s;
+ 	position: absolute;
+}
+.ribbon p {
+	color: white;
+  	margin-left: -14px;
+  	font-weight: bold;
+}
+.gradient {
+	min-height: 400px;
+	height: auto;
+	width: 100%;
+	background-image: url('../img/Reef.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.space {
+	min-height: 400px;
+	height: auto;
+	width: 100%;
+	background-color: white;
+}
+/******
+******Transport******
+******/
+.catalog {
+	height: auto;
+	min-height: 100vh;
+}
+
+.car {
+	width:200px;
+	height:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******
+********Footer******
+******/
+footer {
+	background-color: #3f4145;
+	height: 200px;
+}
+/******
+*******Grid******
+*******/
+@media screen and (max-width: 1200px) {
+	section {
+		width: 100%;
+	}
+	.navbar {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 980px) {
+	.scale .col-4 { width: 40%; }
+	.scale .col-8 { width: 60%; }
+	.menu {
+		width: 290px;
+		right: -290px;
+		transform: translateX(-290px);
+	}
+	.desktop_menu ul li a {
+		font-size: 18px;
+	}
+	.hidden {
+		transform: translateX(0);
+	}
+	.button {
+		padding: 0 10px;
+	}
+	.lead_info {
+		padding: 0px 20px;
+	}
+}
+@media screen and (max-width: 780px) {   
+	[class*='col-'] {
+		padding-right: 0;
+	}
+	.scale .col-4 { width: 100%; }
+	.scale .col-8 { width: 100%; }
+	.lead_form .col-4 { width: 50%; }
+	.lead_form .col-8 { width: 50%; } 
+	.scale {
+		padding-top: 80px;
+	}
+	.col-4 { width: 100%; }
+	.desktop_menu {
+		display: none;
+	}
+	.mobile_menu {
+		display: block;
+	}
+	.navbar .menu li a {
+		color: black;
+	}
+	.top_menu {
+		display: none;
+	}
+	.hidden_top {
+		transform: translateY(0);
+	}
+	.deals {
+		padding-bottom: 10px;
+		padding-top: 30px;
+	}
+	.lead_info {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 560px) {
+	.col-4 { width: 100%; }
+	.col-8 { width: 100%; }
+	.container {
+		padding-top: 60px;
+	}
+	.navbar_buttons {
+		display: none;
+	}
+	.navbar .menu .hidden_button {
+		display: block;
+	}
+	.menu {
+		top: 61px;
+		width: 250px;
+		right: -250px;
+		transform: translateX(-250px);
+	}
+	.hidden {
+		transform: translateX(0);
+	}
+	.deal_wrap {
+		padding: 0;
+	}
+	.lead_form {
+		padding: 0;
+	}
+	.lead_header {
+		padding: 0;
+	}
+	.lead_info .button {
+		width: 100%;
+	}
+}
+
+
+
+
+
